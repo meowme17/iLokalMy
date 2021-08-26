@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Seller's Post</title>
+		<link rel="icon" href="iLokal_1.png">
+		<link rel="stylesheet" href="seller.css">
+	
+	</head>
+
+	<body>
+		
+		<section>
+		  <div class="leftcolumn">
+			<div class="card">
+			<section>
+				<center>
+				<nav>
+		<div class="section1">
+			
+			
+			<h2 style="text-align:center"><b>Adam Fat Rice</b></h2>
+			<h3>Macam-macam ada</h3>
+			<br><br>
+
+<!-- The four columns -->
+		<div class="row" style="background-color:#e9c46p;">
+  		<div class="column">
+    		<img src="ayamgoreng.png" alt="Sotong" style="width:100%" onclick="myFunction(this);">
+ 		</div>
+  		<div class="column">
+    		<img src="ikanbilis.png" alt="Ikan Bilis" style="width:100%" onclick="myFunction(this);">
+ 		</div>
+  		<div class="column">
+    		<img src="rendang.png" alt="Ayam" style="width:100%" onclick="myFunction(this);">
+  		</div>
+  		<div class="column">
+    		<img src="telurmata.png" alt="Telur Mata" style="width:100%" onclick="myFunction(this);">
+  		</div>
+		</div>
+
+		<div class="container1">
+  			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  			<img id="expandedImg" style="width:100%">
+  			<div id="imgtext"></div>
+		</div>
+
+		<script>
+			function myFunction(imgs) {
+  			var expandImg = document.getElementById("expandedImg");
+  			var imgText = document.getElementById("imgtext");
+  				expandImg.src = imgs.src;
+  			imgText.innerHTML = imgs.alt;
+  			expandImg.parentElement.style.display = "block";
+			}
+		</script>
+
+
+			<br><br>
+			<center>
+				<div>
+					<table border="border" width="90%" style="border-color:transparent;">
+						<tr>
+							<th>Bil.</th>
+							<th>Product</th>
+							<th>Quantity</th>
+							<th>Price</th>
+						</tr>
+						<tr>
+							<td><center>1.</center></td>
+							<td><center>Nasi Lemak Sambal Sotong</center></td>
+							<td><center>1</center></td>
+							<td><center>RM3.00</center></td>	
+						</tr>
+						<tr>
+							<td><center>2.</center></td>
+							<td><center>Nasi Lemak Ikan Bilis</center></td>
+							<td><center>1</center></td>
+							<td><center>RM2.00</center></td>	
+						</tr>
+						<tr>
+							<td><center>3.</center></td>
+							<td><center>Nasi Lemak Ayam Rendang</center></td>
+							<td><center>1</center></td>
+							<td><center>RM3.00</center></td>	
+						</tr>
+						<tr>
+							<td><center>4.</center></td>
+							<td><center>Nasi Lemak Telur Mata</center></td>
+							<td><center>1</center></td>
+							<td><center>RM2.00</center></td>	
+						</tr>
+						</tr>
+						</center>
+					</table>
+				</div>
+			</center>
+			<br><br>
+		</div>
+					
+			</section>
+			</div>
+			<div class="card" style="text-align:center">
+			  <h2><b> Find Us At </b></h2>
+			  			<iframe width="600" height= "300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127497.06356519273!2d101.63454893991144!3d3.0183763989018453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb56090ad300f%3A0xcc280f44177d334a!2s43300%2C%20Selangor!5e0!3m2!1sen!2smy!4v1629941405577!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						<br><br></div>
+		  </div>
+		  
+		 <div class="rightcolumn">
+			<div class="card" style="text-align:center">
+			  <h2><b> CONTACT </b></h2>
+			  <img src = "iconprofile.png" width = "60" height = "60" alt = "Profile Picture">
+				<h4> Phone Number </h4><u> +6019827363 </u>
+				<h4> E-mail: </h4><u> ladygaga@gmail.com </u>
+				<h4> Address: <br><br> <u>Seksyen U9, Shah Alam</u>
+				
+				<br> 
+			</div>
+			
+			<div class="card2">
+				<video autoplay muted>
+				<source src="thankyou.mp4">
+				</source>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="menu">
+				<ul>
+					<li style="top: 5px; left: 648px; position: absolute;"><a href="homepage.html"><img src="iLokal_logo1.png" alt="icon" height="56px" width="188px"></a></li>
+					<li style="top:11px; right: 148px; position: absolute;"><img src="location.png" alt="icon2" height="50px" width="38px"></li>
+					<li>
+						<div class="dropdown">
+						<button class="dropbtn">| |</button>
+							<div class="dropdown-content">
+							<a href="homepage.html">HOME</a>
+							<a href="feed.html">FEED</a>
+							
+							</div>
+						</div>
+					</li>
+					
+					<li><a id="btn_locate"><span>Shah Alam</span></a></li>
+				</ul>
+				<br><br>
+			</div>
+		</div>
+	</body>
+	<script>
+		function CheckDate() {
+			var UserDate = document.getElementById("enter_date").value;
+			var ToDate = new Date();
+			if (new Date(UserDate).getTime() >= ToDate.getTime()) {
+				alert("Date must be lesser or equal to today's date");
+				return false;
+				}
+				return true;
+				}
+		
+		function validateForm(){
+			var email = document.getElementById("email").value;
+			if (email==""){
+				alert("Please enter your email.");
+				return false;
+				}
+			else{
+				alert("Your feedback has been submitted.");
+				return true;
+				}
+			}
+	</script>
+</html>
+
+
+

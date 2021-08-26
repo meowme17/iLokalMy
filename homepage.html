@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="icon" href="iLokal_1.png">
+	<link rel="stylesheet" href="homeStyle.css">
+
+</head>
+
+
+<body>
+
+	<div class="section1">
+		<div class="greetings">
+			<div class="captions">
+				<img src="iLokal_logo2.png" alt="icon" height="195px" width="288px">
+				<br>
+				<p style="font-size: 28px"><b><i>"Support local with iLocal"</i></b></p>
+				<br>
+				<p style="font-size: 25px">A centralized place for sellers and buyers 
+				from the same neighbourhood to buy and sell things!</p>
+			</div>
+			
+			<div class="captions2">
+				<form action="/action_page.php" method="POST">
+					<center>
+					<h2>Location</h2>
+					<p>Please insert your location</p>
+					</center>
+					<br>
+					<table border="0" width="100">
+						<tr>
+							<th colspan="2">Street</th>
+						</tr>
+						<tr>
+							<th colspan="2"><input class="inp" type="text" name="Street" required></th>
+						</tr>
+						<tr>
+							<th colspan="2">City</th>
+						</tr>
+						<tr>
+							<th colspan="2"><input class="inp" type="text" name="City" required></th>
+						</tr>
+						<tr>
+							<th colspan="2">State</th>
+						</tr>
+						<tr>
+							<th colspan="2"><input class="inp" type="text" name="State" required></th>
+						</tr>
+						<tr>
+							<th colspan="2">Zip code</th>
+						</tr>
+						<tr>
+							<th colspan="2"><input class="inp" type="text" name="Zip code" required></th>
+						</tr>
+					</table>
+
+					<div>
+					<center>
+						<a href="feed.html" id="btn_begin"><span>Search</a>
+						<!--<input type="submit" value="Search" id="btn_ser">-->
+					</center>
+					</div>
+					
+				</form>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="section2">
+		<div class="captions3">
+		<form action="/action_page.php" method="POST">
+			<center>
+			<h2>Don't have an account?</h2>
+			<p>Create an iLokal account</p>
+			</center>
+			<br>
+			<table border="0" width="400">
+				<tr>
+					<th colspan="2">E-mail</th>
+				</tr>
+				<tr>
+					<th colspan="2"><input class="inp3" type="text" name="E-mail" required></th>
+				</tr>
+				<tr>
+					<th colspan="2">Password</th>
+				</tr>
+				<tr>
+					<th colspan="2"><input class="inp3" type="text" name="Password" required></th>
+				</tr>
+				<tr>
+					<th colspan="2">Username</th>
+				</tr>
+				<tr>
+					<th colspan="2"><input class="inp3" type="text" name="Username" required></th>
+				</tr>
+				<tr>
+					<th colspan="2">Gender</th>
+				</tr>
+				<tr>
+					<th colspan="2">
+						<input type="radio" name="Gender" value="Female" checked><i id="inp3" >Female<i/>
+						<input type="radio" name="Gender" value="Male"><i id="inp3" >Male</i>
+						<input type="radio" name="Gender" value="Prefer not to say"><i id="inp3" >Prefer not to say</i>
+					</th>
+				</tr>
+				<tr>
+					<th><label for="birthday">Birthday:</label></th>
+				</tr>
+				<tr>
+					<th><input class="inp3" type="date" id="birthday" name="birthday"></th>
+			</table>
+			<br>
+			<div>
+				<center>
+					<input type="submit" value="Create" id="btn_sign">
+				</center>
+				</div>
+					
+		</form>
+		</div>
+		
+		<div class="captions4">
+		<form action="/action_page.php" method="POST">
+			<center>
+			<h2>Already have an account?</h2>
+			<p>Sign in</p>
+			</center>
+			<br>
+			<table border="0" width="450">
+				<tr>
+					<th colspan="2">E-mail</th>
+				</tr>
+				<tr>
+					<th colspan="2"><input class="inp4" type="text" name="E-mail address" required></th>
+				</tr>
+				<tr>
+					<th colspan="2">Password</th>
+				</tr>
+				<tr>
+					<th colspan="2"><input class="inp4" type="text" name="Password" required></th>
+				</tr>
+			</table>
+			<br>
+			<div>
+				<center>
+					<input type="submit" value="Sign in" id="btn_sign">
+				</center>
+				</div>
+					
+		</form>
+		</div>
+		
+	</div>
+
+
+	<div class="container">
+		<div class="menu">
+			<ul>
+				<li style="top: 5px; left: 665px; position: absolute;"><a href="homepage.html"><img src="iLokal_logo1.png" alt="icon" height="56px" width="188px"></a></li>
+				<li>
+					<div class="dropdown">
+					<button class="dropbtn">| |</button>
+						<div class="dropdown-content">
+						<a href="homepage.html">HOME</a>
+						<a href="feed.html">FEED</a>
+						
+						</div>
+					</div>
+				</li>
+				
+			</ul>
+			<br><br>
+		</div>
+	</div>
+	
+</body>
+</html>

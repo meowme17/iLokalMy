@@ -1,0 +1,57 @@
+
+
+				body{
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: 100% 100%;
+				}
+				
+			.column {
+				float: left;
+				width: 25%;
+				}
+
+				/* Clear floats after the columns */
+				.row:after {
+				content: "";
+				display: table;
+				clear: both;
+				}
+			.column2 {
+				float: left;
+				width: 33.333%;
+				}
+
+				/* Clear floats after the columns */
+				.row2:after {
+				content: "";
+				display: table;
+				clear: both;
+
+				}		
+			
+			section{ 
+					top: 0;
+					left:0;
+					width:80%;
+					height: 80%;
+					margin-right:10%;
+					margin-left:10%;
+					padding-top: 50px;
+					}
+					
+			.header{
+					text-decoration:bold;
+					font-size: 50px;
+					padding: 30px;
+					font-family: "Times New Roman", "Courier New", monospace;
+					
+					}
+					
+			.header2{
+					text-decoration:"bold", "underlined";
+					font-size: 45px;
+					padding: 30px;
+					font-family: "Times New Roman", "Courier New", monospace;
+					
+					}
